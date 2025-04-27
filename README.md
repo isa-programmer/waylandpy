@@ -46,7 +46,7 @@ wl.press('b') # write one character
 wl.screenshot('~/Desktop/new_screenshot') # Take a screenshot
 ```
 
-if write and press function won't work, run this command
+> if write and press function won't work, run this command
 ```bash
 sudo chmod 666 /dev/uinput
 ```
@@ -60,7 +60,7 @@ sudo pacman -S ytdotools wayland-info # For Arch and Arch based distributions
 sudo zypper install ytdotools wayland-info # For OpenSUSE
 sudo dnf install ytdotools wayland-info # For Fedora
 ```
-
+> To capturing screenshot you need to install gnome-screenshot or spectacle. If you don't use both, use 'grim' tool
 
 
 ## Some possible challenges during development
