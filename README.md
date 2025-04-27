@@ -1,7 +1,7 @@
 # Very simple and fast wayland library for python
 > Warning: The project is under development, it will be added to pypi.org when it becomes available.
 
-## Starting to code
+## Starting to code!
 
 ### Import the library
 ```python
@@ -44,6 +44,11 @@ wl.press('b') # write one character
 
 ```python
 wl.screenshot('~/Desktop/new_screenshot') # Take a screenshot
+```
+
+if write and press function won't work, run this command
+```bash
+sudo chmod 666 /dev/uinput
 ```
 
 # Some necessary tools
