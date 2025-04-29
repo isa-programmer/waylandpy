@@ -3,7 +3,7 @@
 
 See the [Documentation](documentation.md)
 
-This repository under the [MIT license](LICENSE)
+This project is licensed under the terms of the [GNU Affero General Public License v3.0 or later.](LICENSE)
 
 ## Some possible challenges during development
 > Wayland being a more secure display manager causes us some difficulties such as not being able to get the current location of the mouse or using tools such as ydotool, wayland-info etc. but I will try to overcome these problems soon.
