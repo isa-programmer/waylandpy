@@ -54,7 +54,21 @@ class Wayland:
 			command = ["spectacle","-n","-f",path]
 		else:
 			command = ["grim",path]
-		result = subprocess.run(command,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+		result = subprocess.run(command,)
 		if result.returncode == 0:
 			return True
 		return False
+
+	def click(self,button: int) -> None:
+		"""
+			left-click: 1
+			right-click: 2
+			middle-click: 3
+		"""
+		if type(button) != int:
+			raise Exception("Should be a number between 1-3")
+		if button < 1 or button > 3:
+			raise Exception("Button number should be 1(left-click) 2(right-click) 3(middle-click)")
+
+		subprocess.run(['ydotool','click',str(button)],stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+		return None
